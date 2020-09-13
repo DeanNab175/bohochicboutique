@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="./dist/css/vendor/animate.min.css">
+    
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="./dist/css/vendor/fontawesome/all.min.css">
+
+    <!-- Owl carousel styles -->
+    <link rel="stylesheet" href="./dist/css/vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./dist/css/vendor/owlcarousel/owl.theme.default.min.css">
+
+    <!-- Google Fonts: Itim -->
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Josefin Sans, Montserrat, Pacifico -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./dist/css/styles.min.css?cb=1600015974215">
+    <title>Delicious Food</title>
+  </head>
+  <body>
+    <!-- HEADER
+    =============================================== -->
+    <header>
+      <div class="container">
+        <!-- Header menu bar -->
+        <div class="navbar justify-content-between">
+
+          <div class="logo">
+            <a class="navbar-brand" href="/">
+              Boho Chic Boutique
+            </a>
+          </div><!-- .logo -->
+
+          <div class="navigation-block d-flex justify-content-between">
+
+            <div class="contact-info d-flex align-items-center">
+              <nav id="horizontal-nav-menu" class="horizontal-nav-menu">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                </ul>
+              </nav><!-- .main-menu-nav -->
+              
+              <div class="user-cta btn-group ml-auto" role="group" aria-label="Basic example">
+                <button type="button" class="user-cta__btn user-cta__search btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button type="button" class="user-cta__btn user-cta__signin btn"><i class="fa fa-user" aria-hidden="true"></i></button>
+                <button type="button" class="user-cta__btn user-cta__cart btn" onclick="location.href='cart.html';">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  <span class="badge badge-light">3</span>
+                  <span class="sr-only">cart items</span>
+                </button>
+              </div>
+            </div><!-- .contact-info -->
+
+          </div><!-- .navigation-block -->
+
+        </div><!-- .navbar -->
+        
+      </div><!-- .container -->
+    </header>
+    <!-- MAIN
+    =============================================== -->
+    <main>
+      
+
+      <!-- About section -->
+      <section class="cart">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h1>Cart</h1>
+              <div class="cart-list">
+                  <ul class="cart-list__items cart-list__header">
+                    <li class="cart-list__item">Image</li>
+                    <li class="cart-list__item">Product</li>
+                    <li class="cart-list__item">Price</li>
+                    <li class="cart-list__item">Quantity</li>
+                    <li class="cart-list__item">Subtotal</li>
+                  </ul>
+
+                  <ul class="cart-list__items cart-list__products">
+                      <li class="cart-list__item">
+                          <img src="dist/images/img-thumb1.jpg" alt="thumb" class="cart-list__img-thumb">
+                      </li>
+                      <li class="cart-list__item">
+                          <a href="#">Jar deco</a>
+                      </li>
+                      <li class="cart-list__item">Rs 116</li>
+                      <li class="cart-list__item">
+                          <input type="number" id="quantity" name="quantity" value="1" min="1" max="100">
+                        </li>
+                      <li class="cart-list__item">Rs 116</li>
+                    </ul>
+                    
+                    <ul class="cart-list__items cart-list__products">
+                        <li class="cart-list__item">
+                            <img src="dist/images/img-thumb2.jpg" alt="thumb" class="cart-list__img-thumb">
+                        </li>
+                        <li class="cart-list__item">
+                            <a href="#">Jar deco</a>
+                        </li>
+                        <li class="cart-list__item">Rs 206</li>
+                        <li class="cart-list__item">
+                            <input type="number" id="quantity" name="quantity" value="1" min="1" max="100">
+                        </li>
+                        <li class="cart-list__item">Rs 206</li>
+                    </ul>
+
+                    <ul class="cart-list__items cart-list__products">
+                        <li class="cart-list__item">
+                            <img src="dist/images/img-thumb3.jpg" alt="thumb" class="cart-list__img-thumb">
+                        </li>
+                        <li class="cart-list__item">
+                            <a href="#">Jar deco</a>
+                        </li>
+                        <li class="cart-list__item">Rs 89</li>
+                        <li class="cart-list__item">
+                            <input type="number" id="quantity" name="quantity" value="1" min="1" max="100">
+                        </li>
+                        <li class="cart-list__item">Rs 89</li>
+                    </ul>
+
+                    <ul class="cart-list__items cart-list__footer">
+                        <li class="cart-list__item">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Coupon code" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary btn--reg" type="button">Apply coupon</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cart-list__item cart-list__item--right">
+                            <button type="button" class="btn btn-primary btn--reg">Update cart</button>
+                        </li>
+                    </ul>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER
+    =============================================== -->
+    <footer></footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery -->
+    <script src="./dist/js/vendor/jquery-3.5.1.min.js"></script>
+    
+    <!-- Popper.js -->
+    <script src="./dist/js/vendor/popper.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="./dist/js/vendor/bootstrap.min.js"></script>
+    
+    <!-- Owl carousel js -->
+    <script src="./dist/js/vendor/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="./dist/js/script.min.js?cb=1600015974215"></script>
+  </body>
+</html>

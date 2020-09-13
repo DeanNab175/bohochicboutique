@@ -1,0 +1,46 @@
+header {
+    background-color: getColor("secondary");
+}
+
+.navbar-brand {
+    font-family: getFont("itim");
+    font-size: getFontSize("xl");
+    color: getColor("white");
+    &:hover,
+    &:focus {
+        color: getColor();
+    }
+}
+
+
+.contacts {
+    span {
+        font-size: getFontSize("sm");
+        line-height: 1;
+        margin: 0 1rem 0 0;
+
+        i {
+            margin: 0 1rem 0 0;
+        }
+    }
+}
+
+.reserve_table {
+    a.btn {
+        font-size: getFontSize("xs");
+        line-height: 1;
+    }
+}
+
+.user-cta {
+    &__btn {
+        font-size: 1.7rem;
+        border-radius: 0;
+        color: getColor("white");
+
+        &:hover,
+        &:focus {
+            color: getColor("primary");
+        }
+    }
+}
